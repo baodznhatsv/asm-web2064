@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan Shop - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i> Susan Shop
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                    <li><a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span data-i18n="nav.cart">Cart</span> <span id="cart-count">0</span>
+                        </a></li>
+                    <li id="user-menu">
+                        <a href="login.html" id="login-link">
+                            <i class="fas fa-user"></i> <span data-i18n="nav.login">Login</span>
+                        </a>
+                    </li>
+                    <li id="admin-menu" style="display: none;">
+                        <a href="admin/dashboard.html">
+                            <i class="fas fa-cog"></i> <span data-i18n="admin.dashboard">Admin</span>
+                        </a>
+                    </li>
+                    <!-- Language switcher will be added here by i18n.js -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.title">Welcome to Susan Shop</h1>
+            <p data-i18n="hero.subtitle">Discover amazing products at great prices</p>
+            <a href="products.html" class="btn btn-primary" data-i18n="hero.button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container">
+        <div class="section-header">
+            <h2 data-i18n="categories.title">Shop by Category</h2>
+        </div>
+        <div class="categories-grid" id="categories-container">
+            <!-- Categories will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container">
+        <div class="section-header">
+            <h2 data-i18n="products.title">Featured Products</h2>
+        </div>
+        <div class="products-grid" id="featured-products">
+            <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shopping-bag"></i> Susan Shop</h3>
+                    <p data-i18n="footer.description">Your trusted online shopping destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+                        <li><a href="login.html" data-i18n="nav.login">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@susanshop.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 Susan Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/i18n.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
