@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "MacBook Pro 16",
+    "cate_id": 5,
+    "detail": "High-performance laptop with M2 Pro chip, 16GB RAM, 512GB storage. Perfect for professional work and creative tasks.",
+    "image": "images/macbook.jpg"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 15 Pro",
+    "cate_id": 6,
+    "detail": "Latest flagship smartphone with A17 Pro chip, 256GB storage, Titanium design with ProMotion display.",
+    "image": "images/iphone_15_pro.png"
+  },
+  {
+    "id": 3,
+    "name": "Dell XPS 15",
+    "cate_id": 5,
+    "detail": "Premium laptop with 12th Gen Intel Core i7, 16GB RAM, 1TB SSD, 4K OLED touchscreen display.",
+    "image": "images/dell.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy S24 Ultra",
+    "cate_id": 6,
+    "detail": "Premium Android flagship with Snapdragon 8 Gen 3, 256GB storage, S Pen support, 200MP camera.",
+    "image": "images/s24-ultra-tim.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Men's Casual T-Shirt",
+    "cate_id": 7,
+    "detail": "Comfortable cotton t-shirt with modern fit. Available in multiple colors and sizes.",
+    "image": "images/aonam.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Women's Summer Dress",
+    "cate_id": 8,
+    "detail": "Elegant floral print dress perfect for summer. Lightweight and breathable fabric.",
+    "image": "images/aonu.jpg"
+  },
+  {
+    "id": 7,
+    "name": "JavaScript: The Definitive Guide",
+    "cate_id": 3,
+    "detail": "Comprehensive guide to JavaScript programming. 6th edition covering modern JavaScript features.",
+    "image": "images/ima.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Garden Tool Set",
+    "cate_id": 4,
+    "detail": "Complete set of gardening tools including spade, rake, pruner, and gloves. Durable stainless steel construction.",
+    "image": "images/dungcu.jpg"
+  }
+]
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Susan Shop Admin</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Admin Navigation -->
+    <nav class="admin-nav">
+        <div class="admin-nav-content">
+            <div class="admin-logo">
+                <i class="fas fa-shopping-bag"></i> Susan Shop Admin
+            </div>
+            <div class="admin-nav-links">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="categories.html">Categories</a>
+                <a href="products.html">Products</a>
+                <a href="orders.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="statistics.html" class="active">Statistics</a>
+                <a href="../index.html"><i class="fas fa-home"></i> Back to Shop</a>
+                <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Statistics -->
+    <section class="admin-container">
+        <h1>Statistics</h1>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="stat-total-products">0</h3>
+                    <p>Total Products</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="stat-total-orders">0</h3>
+                    <p>Total Orders</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="stat-total-revenue">$0</h3>
+                    <p>Total Revenue</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-box"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="stat-total-inventory">0</h3>
+                    <p>Total Inventory</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2>Most Ordered Products</h2>
+            <div class="admin-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Total Orders</th>
+                            <th>Total Quantity</th>
+                            <th>Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody id="popular-products-table">
+                        <!-- Popular products will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <h2>Inventory Alert</h2>
+            <div class="admin-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventory-alert-table">
+                        <!-- Low stock products will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="admin-statistics.js"></script>
+</body>
+
+</html>

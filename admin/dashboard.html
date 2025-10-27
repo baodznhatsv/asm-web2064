@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Susan Shop</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Admin Navigation -->
+    <nav class="admin-nav">
+        <div class="admin-nav-content">
+            <div class="admin-logo">
+                <i class="fas fa-shopping-bag"></i> Susan Shop Admin
+            </div>
+            <div class="admin-nav-links">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="categories.html">Categories</a>
+                <a href="products.html">Products</a>
+                <a href="orders.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="statistics.html">Statistics</a>
+                <a href="../index.html"><i class="fas fa-home"></i> Back to Shop</a>
+                <a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <section class="admin-container">
+        <h1>Dashboard</h1>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-products">0</h3>
+                    <p>Total Products</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-orders">0</h3>
+                    <p>Total Orders</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-customers">0</h3>
+                    <p>Total Customers</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 id="total-revenue">$0</h3>
+                    <p>Total Revenue</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h2>Recent Orders</h2>
+                <div id="recent-orders">
+                    <!-- Recent orders will be loaded here -->
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <h2>Popular Products</h2>
+                <div id="popular-products">
+                    <!-- Popular products will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-card" style="margin-top: 2rem;">
+            <h2>Inventory Alert (Low Stock)</h2>
+            <div id="inventory-alert">
+                <!-- Low stock products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="admin-dashboard.js"></script>
+</body>
+
+</html>

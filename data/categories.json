@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "parent_id": null
+  },
+  {
+    "id": 2,
+    "name": "Clothing",
+    "parent_id": null
+  },
+  {
+    "id": 3,
+    "name": "Books",
+    "parent_id": null
+  },
+  {
+    "id": 4,
+    "name": "Home & Garden",
+    "parent_id": null
+  },
+  {
+    "id": 5,
+    "name": "Laptops",
+    "parent_id": 1
+  },
+  {
+    "id": 6,
+    "name": "Smartphones",
+    "parent_id": 1
+  },
+  {
+    "id": 7,
+    "name": "Men's Wear",
+    "parent_id": 2
+  },
+  {
+    "id": 8,
+    "name": "Women's Wear",
+    "parent_id": 2
+  }
+]
+
